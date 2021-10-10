@@ -1,23 +1,27 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Website Language Selector",
+    'name': 'Product Weighted Barcode',
+    'summary': "Generate Weighted Barcode of the Product to used in POS with To Weigh With Scale solution",
+    'description': """Generate Weighted Barcode of the Product to used in POS with To Weigh With Scale solution""",
 
-    'summary': """Move the language select to the menu""",
+    'author': 'iPredict IT Solutions Pvt. Ltd.',
+    'website': 'http://ipredictitsolutions.com',
+    "support": "ipredictitsolutions@gmail.com",
 
-    'description': """Move the language select to the menu""",
+    'category': 'Point of Sale',
+    'version': '12.0.0.1.0',
+    'depends': ['point_of_sale'],
 
-    'author': "Safyric Co., Ltd.",
-    'website': "https://www.safyric.com",
-
-    'category': 'Website',
-    'version': '12.0.0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['website'],
-
-    # always loaded
     'data': [
-        'views/website_template.xml',
+        'views/res_config_setting_view.xml',
     ],
+
+    'license': "OPL-1",
+    'price': 11,
+    'currency': "EUR",
+
+    'auto_install': False,
     'installable': True,
+
+    'images': ['static/description/banner.png'],
 }
